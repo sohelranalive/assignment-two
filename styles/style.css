@@ -1,0 +1,253 @@
+/* Importing font style according to Figma File */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Ubuntu&family=Work+Sans:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 70px;
+    color: #131313;
+}
+
+button {
+    width: 180px;
+    height: 64px;
+    background: #FF900E;
+    color: #FFFFFF;
+    padding: 20px 25px;
+    font-Weight: 600;
+    font-Size: 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Styles for header section nav-ber and banner start */
+.header {
+    background-color: #FF900E1A;
+}
+
+/* styles for nav-ber start*/
+.nav {
+    width: 80%;
+    margin: 0px auto 102px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menu ul {
+    display: flex;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+    padding-left: 80px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* styles for nav-ber  end*/
+
+/* styles for banner and banner descriptions start */
+.banner {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.banner-heading {
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.banner-heading h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner-details {
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.banner-details p {
+    margin-bottom: 33px;
+}
+
+.banner-details button {
+    margin-bottom: 50px;
+}
+
+.banner-image img {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+/* styles for banner and banner descriptions end*/
+
+/* Styles for header section nav-ber and banner end */
+
+/* styles for features start*/
+.features,
+.features-2,
+.some-facts,
+.sponsors,
+.footer,
+.media{
+    margin: 85px auto 0;
+    width: 80%;
+}
+
+.features-details {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+.features-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border: 1px solid black;
+}
+
+.features-descriptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-descriptions .fade {
+    color: #727272;
+}
+
+.features-descriptions .colorful {
+    color: #FF900E
+}
+
+.features-2-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 145px;
+}
+
+.features-2-descriptions {}
+
+.features-2-des-box {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.features-2-image {}
+
+/* styles for featured end */
+/* styles for some fact section start*/
+.facts-details {}
+
+.fact-description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.fact-description> p{
+    margin-top: -25px;
+}
+
+.fact-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 125px;
+    margin-top: 100px;
+}
+
+.fact-box {
+    border: 1px solid red;
+}
+
+/* styles for some fact section end */
+
+/* styles for sponsors start */
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.sponsors-details {
+    width: 50%;
+    margin: 0px auto 50px;
+}
+
+.sponsors-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    filter: grayscale(100%);
+}
+
+/* styles for sponsors  end*/
+
+/* section for our small footer start*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF4E7;
+    font-weight: 400;
+    font-size: 20px;
+    color: #424242;
+    margin-bottom: 215px;
+    height: 100px
+}
+
+.footer:hover{
+    border: 2px solid rgb(14, 173, 173);
+}
+/* section for our small footer end */
+
+/* Styles for media section, BONUS section */
+
+.media-blogs{
+    display: flex;
+    flex-direction: column;
+}
+
+.media-description{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.media-boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.media-box{
+    display: flex;
+    gap: 30px;
+}
+
+.media-box img{
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+}
