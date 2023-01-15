@@ -388,3 +388,87 @@ button {
 }
 
 /* Styles for media section, BONUS section END */
+
+/* Responsiveness */
+/* for small/mobile devices */
+@media only screen and (max-width: 576px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+        margin: 0px auto 25px;
+    }
+
+    .banner {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .banner-image img {
+        width: 98%;
+    }
+
+    .banner-heading {
+        margin: auto;
+        font-size: 65px;
+        width: 100%;
+    }
+
+    .features-details {
+        flex-direction: column-reverse;
+    }
+
+    .features-2-details {
+        flex-direction: column;
+    }
+
+    .features-descriptions,
+    .features-images,
+    .features-2,
+    .features-2-descriptions,
+    .features-2-image,
+    .image-div,
+    .fact-description,
+    .sponsors-details {
+        width: 100%;
+    }
+
+    .features-2-descriptions>p {
+        margin-left: 20px;
+    }
+
+    .vertical-line {
+        height: 160px;
+    }
+
+    .features-2-des-box {
+        padding: 20px;
+    }
+
+    .image-div,
+    .sticker-div {
+        position: relative;
+    }
+
+    .fact-boxes {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 80px;
+    }
+
+    .sponsors-logo {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .media-boxes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .media-box {
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
