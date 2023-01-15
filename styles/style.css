@@ -1,6 +1,7 @@
 /* Importing font style according to Figma File */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Ubuntu&family=Work+Sans:wght@500&display=swap');
 
+/* Some common Styles */
 body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Ubuntu', sans-serif;
@@ -37,12 +38,11 @@ button {
     border: none;
 }
 
-/* Styles for header section nav-ber and banner start */
+/* Styles for header section, nav-ber and banner start */
 .header {
     background-color: #FF900E1A;
 }
 
-/* styles for nav-ber start*/
 .nav {
     width: 80%;
     margin: 0px auto 102px;
@@ -65,7 +65,7 @@ button {
 
 /* styles for nav-ber  end*/
 
-/* styles for banner and banner descriptions start */
+
 .banner {
     width: 80%;
     margin: 0px auto;
@@ -111,9 +111,10 @@ button {
 
 /* Styles for header section nav-ber and banner end */
 
+
 /* styles for features start*/
 
-/* common for features and features-2 sections style */
+/* some common for features and features-2 sections style */
 .features,
 .features-2,
 .some-facts,
@@ -124,7 +125,7 @@ button {
     width: 80%;
 }
 
-/* common for features and features-2 */
+/* common for features and features-2 start */
 
 .features-details {
     display: flex;
@@ -168,21 +169,38 @@ button {
 /* styles for features end*/
 
 /* styles for features-2 start*/
-
 .features-2-details {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 55px;
-    border: 1px solid red;
-    align-content: stretch;
+    border: 3px solid transparent;
+}
 
+.features-2-details:hover {
+    border: 3px solid rgb(82, 196, 241);
+    border-radius: 8px;
 }
 
 .features-2-descriptions {
     width: 50%;
-    border: 1px solid royalblue;
+    height: 80%;
 }
+
+.features-2-heading {
+    display: flex;
+}
+
+.vertical-line {
+    border-left: 4px solid #FF900E;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.features-2-descriptions .features-2-tittle {
+    margin-top: 40px;
+    width: 80%;
+    margin-left: 20px;
+}
+
 
 .features-2-des-box {
     background: #FFFFFF;
@@ -194,18 +212,42 @@ button {
 
 .features-2-image {
     width: 50%;
-    border: 1px solid royalblue;
+    position: relative;
 }
 
-.features-2-image img {
+.image-div {
+    height: 95%;
+    width: 90%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.image-div img {
     width: 100%;
+    height: 100%;
 }
 
 .sticker-div {
-    width: 342px;
-    height: 200px;
-    border: 1px solid red;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 40px;
     background-color: #FF900E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticker-div h2 {
+    color: #FFFFFF;
+}
+
+.sticker-div p {
+    color: #FFFFFF;
 }
 
 /* styles for features-2 end*/
@@ -238,14 +280,12 @@ button {
 }
 
 .fact-box {
-    border: transparent;
-    border: 1px solid #FF900E;
-    ;
     border-radius: 8px;
+    border: 2px solid #FF900E;
 }
 
 .fact-box:hover {
-    border: 3px solid rgb(82, 196, 241);
+    border: 2px solid rgb(82, 196, 241);
 }
 
 /* styles for some fact section end */
@@ -261,13 +301,29 @@ button {
 .sponsors-details {
     width: 50%;
     margin: 0px auto 50px;
+    border: 3px solid transparent;
+}
+
+.sponsors-details:hover {
+    border: 3px solid rgb(82, 196, 241);
 }
 
 .sponsors-logo {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.sponsors-logo img {
     filter: grayscale(100%);
+}
+
+.sponsors-logo>div {
+    border: 3px solid transparent;
+}
+
+.sponsors-logo>div:hover {
+    border: 3px solid rgb(82, 196, 241);
 }
 
 /* styles for sponsors  end*/
@@ -298,6 +354,15 @@ button {
 .media-blogs {
     display: flex;
     flex-direction: column;
+}
+
+.media-info h3>a {
+    text-decoration: none;
+    color: #131313;
+}
+
+.media-info h3>a:hover {
+    text-decoration: underline;
 }
 
 .media-description {
