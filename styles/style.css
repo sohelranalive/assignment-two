@@ -13,12 +13,16 @@ h2 {
     font-weight: 700;
     font-size: 45px;
     color: #131313;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 h1 {
     font-weight: 700;
     font-size: 70px;
     color: #131313;
+    margin: 0px;
+    padding: 0px;
 }
 
 button {
@@ -42,6 +46,7 @@ button {
 .nav {
     width: 80%;
     margin: 0px auto 102px;
+    padding-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,6 +99,12 @@ button {
 .banner-image img {
     width: 100%;
     margin-bottom: 45px;
+    border: 3px solid transparent;
+}
+
+.banner-image img:hover {
+    border: 3px solid rgb(82, 196, 241);
+    border-radius: 9px;
 }
 
 /* styles for banner and banner descriptions end*/
@@ -101,15 +112,19 @@ button {
 /* Styles for header section nav-ber and banner end */
 
 /* styles for features start*/
+
+/* common for features and features-2 sections style */
 .features,
 .features-2,
 .some-facts,
 .sponsors,
 .footer,
-.media{
+.media {
     margin: 85px auto 0;
     width: 80%;
 }
+
+/* common for features and features-2 */
 
 .features-details {
     display: flex;
@@ -121,7 +136,17 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    border: 1px solid black;
+    width: 45%;
+}
+
+.features-images img {
+    width: 100%;
+    border: 3px solid transparent;
+}
+
+.features-images img:hover {
+    border: 3px solid rgb(82, 196, 241);
+    border-radius: 8px;
 }
 
 .features-descriptions {
@@ -129,6 +154,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 45%;
 }
 
 .features-descriptions .fade {
@@ -139,26 +165,57 @@ button {
     color: #FF900E
 }
 
+/* styles for features end*/
+
+/* styles for features-2 start*/
+
 .features-2-details {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 145px;
+    gap: 55px;
+    border: 1px solid red;
+    align-content: stretch;
+
 }
 
-.features-2-descriptions {}
+.features-2-descriptions {
+    width: 50%;
+    border: 1px solid royalblue;
+}
 
 .features-2-des-box {
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
+    padding: 35px;
+    margin-top: 15px;
 }
 
-.features-2-image {}
+.features-2-image {
+    width: 50%;
+    border: 1px solid royalblue;
+}
 
-/* styles for featured end */
+.features-2-image img {
+    width: 100%;
+}
+
+.sticker-div {
+    width: 342px;
+    height: 200px;
+    border: 1px solid red;
+    background-color: #FF900E;
+}
+
+/* styles for features-2 end*/
+
+
 /* styles for some fact section start*/
-.facts-details {}
+.facts-details {
+    display: flex;
+    flex-direction: column;
+}
 
 .fact-description {
     display: flex;
@@ -166,20 +223,29 @@ button {
     width: 50%;
 }
 
-.fact-description> p{
-    margin-top: -25px;
+.fact-description p {
+    margin-top: 25px;
 }
 
 .fact-boxes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    align-items: center;
     text-align: center;
     gap: 125px;
-    margin-top: 100px;
+    width: 90%;
+    margin: 100px auto 0px;
 }
 
 .fact-box {
-    border: 1px solid red;
+    border: transparent;
+    border: 1px solid #FF900E;
+    ;
+    border-radius: 8px;
+}
+
+.fact-box:hover {
+    border: 3px solid rgb(82, 196, 241);
 }
 
 /* styles for some fact section end */
@@ -216,38 +282,44 @@ button {
     font-size: 20px;
     color: #424242;
     margin-bottom: 215px;
-    height: 100px
+    height: 100px;
+    border: 3px solid transparent;
+    border-radius: 8px;
 }
 
-.footer:hover{
-    border: 2px solid rgb(14, 173, 173);
+.footer:hover {
+    border: 3px solid rgb(82, 196, 241);
 }
+
 /* section for our small footer end */
 
-/* Styles for media section, BONUS section */
+/* Styles for media section, BONUS section Start */
 
-.media-blogs{
+.media-blogs {
     display: flex;
     flex-direction: column;
 }
 
-.media-description{
+.media-description {
     text-align: center;
     margin-bottom: 80px;
 }
-.media-boxes{
+
+.media-boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
 }
 
-.media-box{
+.media-box {
     display: flex;
     gap: 30px;
 }
 
-.media-box img{
+.media-box img {
     height: 150px;
     width: 250px;
     border-radius: 10px;
 }
+
+/* Styles for media section, BONUS section END */
